@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div>
+    <h2>Mercy Salome Vasquez Ortiz Carnet: 0909-20-5202</h2>
+    <h2>Hugo Andreé Argueta Rodas Carnet: 0909-20-4492</h2>
+    </div>
+    <form id="estructura_calculadora">
+        <h1>Calculadora JavaScript</h1>
+        <h3>Resultado: <span id="result"></span></h3>
+
+        <label>Primer Número:</label>
+        <br>
+        <input type="number" id="valor_numero1" placeholder="Ingresa un numero">
+
+        <br>
+        <br>
+        <br>
+
+        <label>Segundo Número:</label>
+        <br>
+        <input type="number" id="valor_numero2" placeholder="Ingresa otro número">
+        
+        <br>
+        <br>
+        <br>
+
+        <label>Options</label>
+        <select class="custom-select" id="opciones_operaciones">
+            <option selected>Selecciona una operación</option>
+            <option value="1" onclick="sumar();">Sumar</option>
+            <option value="2" onclick="restar();">Restar</option>
+            <option value="3" onclick="multiplicar();">Multiplicar</option>
+            <option value="4" onclick="dividir();">Dividir</option>
+        </select>
+
+    </form>
+</body>
+</html>
